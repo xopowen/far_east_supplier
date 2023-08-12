@@ -1,0 +1,88 @@
+
+.services {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  border-radius:20px;
+  color: $black_color;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 40px 0px 40px 16px;
+
+  @include media-portrait767max {
+    grid-column: span 1;
+
+    grid-template-columns: repeat(1,auto);
+    box-shadow:none;
+    padding: 0;
+  }
+  @include media-phones375max{
+    padding: 32px 24px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  // .services__card
+  &__card {
+    margin:40px 0px 56px 64px;
+    border-right: 1px solid #D7D7DD;
+    &:nth-child(3n){
+      border-right:none;
+    }
+    @include media-portrait767max{
+      width:100%;
+      height: 164px;
+      display:grid;
+      grid-template-columns: min(156px,30%) auto;
+      align-items:center;
+      margin: 8px 0px 8px 0px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+      border-radius:20px;
+    }
+    @include media-phones375max{
+      display:grid;
+      gap: 16px;
+      grid-template-columns:auto;
+      height: auto;
+      box-shadow: none;
+      border: none;
+    }
+     .services__img,
+      picture,
+      source,
+      img, {
+        width: 92px;
+        height: 92px;
+        @include media-portrait767max{
+          justify-self: center;
+        }
+        @include media-phones375max{
+          justify-self: start;
+          width: 71px;
+          height: 71px;
+        }
+      }
+
+  }
+
+
+  &__body {
+    padding-right:15%;
+    padding-top: 24px;
+    @include media-portrait767max{
+      padding-top: 0;
+    }
+    @include media-phones375max{
+      padding: 0;
+    }
+  }
+
+  // .services__head
+  &__head {
+    line-height: 135%;
+    margin-bottom: 10px;
+  }
+  // .services__text
+  &__text {
+
+  }
+}

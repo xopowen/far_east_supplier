@@ -1,0 +1,106 @@
+@import "components/pagination";
+
+@import "components/addidions/variable";
+@import "components/addidions/mixins";
+@import "components/addidions/style_zeroing";
+@import "components/container";
+@import "components/about-us";
+@import "components/style";
+@import "components/movie-block";
+@import "components/client-logo";
+@import "components/clients";
+@import "components/contacts";
+@import "components/form-connections";
+@import "components/greenfonc";
+@import "components/main-screen";
+@import "components/our-team";
+@import "components/our-work";
+@import "components/perecarotks";
+@import "components/selected";
+@import "components/services";
+@import "components/stages";
+@import "components/table";
+@import "components/your-info";
+@import "components/survey";
+
+a:visited{
+  color: inherit;
+}
+:root{
+  --font-family-head:"Exo 2";
+  --font-family-text:"PT Sans";
+}
+
+h1{
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  font-size: min(3.6vw,52px);
+  @include media-portrait767max(){
+    font-size: min(5.7vw,44px);
+  }
+  @include media-phones375max(){
+    font-size: min(7.4vw,28px);
+  }
+}
+
+h2{
+  font-family: 'Exo 2';
+
+  font-size: min(3.4vw,48px);
+  @include media-portrait767max(){
+    font-size: min(5.4vw,44px);
+  }
+  @include media-phones375max(){
+    font-size: min(7.1vw,28px);
+  }
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+h3{
+  font-family: 'Exo 2';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  @include media-phones375max{
+    font-size: 18px;
+  }
+}
+
+h4{
+  font-family: 'Exo 2';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+}
+
+.big-strip{
+  height: 105px;
+  max-width: 1440px;
+  width: 100%;
+  position: absolute;
+  padding: 0 12%;
+}
+
+body{
+  margin: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+main{
+  min-height: 100vh;
+}
+
+
+button:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}
+button:active{
+  transform: scale(1);
+  transition: .3s;
+}

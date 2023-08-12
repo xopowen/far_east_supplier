@@ -1,0 +1,11 @@
+.perecarotks{
+  position: relative;
+  width: 86px;
+  height: 0px;
+  margin:24px 0px;
+  border: 1.5px solid #FFCE50;
+  @media screen and (max-width:375px){
+    opacity: 0;
+    margin:8px 0px;
+  }
+}

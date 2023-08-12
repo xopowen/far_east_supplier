@@ -1,0 +1,10 @@
+
+.selected {
+  // .selected_text
+  &_text {
+    font-family: var(--font-family-text);
+    font-weight:700;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}

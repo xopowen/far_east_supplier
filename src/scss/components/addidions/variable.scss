@@ -1,0 +1,25 @@
+
+//чёрный цвет
+$black_color:#363738;
+
+//серый цвет
+$gray_color:#6B6B6C;
+//белый цвет
+$white_color:#FFFFFF;
+
+//шаблон для заголовкиов
+%shaplone_in_heads{
+  font-family: var(--font-family-head);
+  font-style: normal;
+  font-weight: 600;
+}
+
+//шаблон для текста
+%main_text{
+  font-family: var(--font-famaly-text);
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+

@@ -1,0 +1,17 @@
+.greenfonc{
+    position: absolute;
+    width: 507px;
+    height: 787px;
+    left: 62.4%;
+    top: 0px;
+    background:#0B7572;
+    z-index: -1;
+@media screen and (max-width:770px) {
+        width: 177px;
+        left: 77%;
+    }
+@media screen and (max-width: 375px) {
+        width:100%;
+        left:0%;
+    }
+}

@@ -1,0 +1,96 @@
+.our-team {
+
+  &__main{
+    margin-top:72px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    @include media-phones375max{
+      grid-template-columns: auto;
+    }
+  }
+
+  // .our-team__card
+  &__card {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border-left: 51px solid #0B7572;
+
+    @include media-portrait767max{
+      display: block;
+      border-left: 30px solid #0B7572;
+
+    }
+    @include media-phones375max{
+      max-width: 100%;
+      display:flex;
+      border-left: 20px solid #0B7572;
+      flex-wrap: nowrap;
+
+    }
+
+    padding: 32px 0px;
+    padding-left:32px+24px ;
+    @include media-portrait767max{
+      padding: 32px 30px;
+      padding-left:32px+24px ;
+    }
+    @include media-phones375max{
+      padding: 24px 16px;
+
+    }
+
+
+  }
+  // .our-team__img
+  &__img {
+
+    @media screen and (max-width:375px){
+      margin:24px 0;
+      max-width: 100px;
+      img{
+        margin: 20% auto;
+        max-width: 100px;
+      }
+    }
+  }
+  // .our-team__body
+  &__body {
+
+  }
+  // .our-team__headmin
+  &__headmin {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  // .our-team__perecarotks
+  &__perecarotks {
+    position: relative;
+    width: 86px;
+    height: 0px;
+    border: 1.5px solid #FFCE50;
+    margin:16px 0px 32px 0px;
+    @media screen and (max-width:770px){
+      opacity:1;
+      margin:16px 0px 32px 0px;
+    }
+  }
+  // .our-team__text
+  &__text {
+    margin-top:16px;
+  }
+  // .our-team__icons
+  &__icons {
+    display: flex;
+
+  }
+  // .our-team__contact
+  &__contact {
+    margin-right:20px;
+  }
+}

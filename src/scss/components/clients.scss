@@ -1,0 +1,70 @@
+.clients {
+  display: flex;
+  padding: 4.6% 67px;
+  background: #0B7572 url(../img/ieroglif.png) no-repeat 13%;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include media-portrait767max{
+    flex-direction: column;
+    padding: 42px 8.7%;
+    background-size: 70%;
+    background-position: top;
+  }
+  @include media-phones480max{
+    padding: 32px 15px;
+    th,td{
+      display:none;
+    }
+    th.clients__mobils,td.clients__mobils{
+      display: revert;
+    }
+  }
+
+  // .cliests__header
+  &__head {
+    width: 33%;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+  flex-grow: 1;
+  }
+  // .clients__left
+  &__lefts {
+    width: 652px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    @media screen and (max-width: 770px) {
+      width:100%;
+    }
+  }
+  &__header{
+    display: flex;
+    padding:28px 0px;
+    margin:0px 40px;
+    border-bottom:1px solid #D7D7DD;;
+    justify-content: space-between;
+  }
+  // .clients__logo
+  &__logo {
+
+  }
+  // .clients__text
+  &__text {
+    width: 274px;
+    height:62px;
+    font-size: 11px;
+    line-height: 150%;
+    @media screen and (max-width: 650px) {
+      display:none;
+    }
+  }
+  // .clients__mobils
+  &__mobils {
+    display:none;
+  }
+  // .clients__nemper
+  &__nemper {
+    font-size: 14px;
+    line-height: 135%;
+    color: #363738;
+  }
+}

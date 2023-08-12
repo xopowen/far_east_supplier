@@ -1,0 +1,12 @@
+.movie-block {
+
+  // .videoBlock__text
+  &__text {
+    max-width: 848px;
+    margin:32px 0px;
+  }
+  // .videoBlock__video
+  &__video {
+    width: 100%;
+  }
+}
