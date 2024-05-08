@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 15px;
-    @include media-phones375max{
+    @include media-portrait767max{
       grid-template-columns: auto;
     }
   }
