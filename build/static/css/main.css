@@ -876,11 +876,12 @@ span{
 	border-bottom:20px solid #e9e9ec
 }
 .survey__min-head{
-	font-size:20px;
-	line-height:150%;
+	font:normal 20px/150% "Exo 2",serif;
+	display:block;
 	margin-bottom:16px
 }
 .survey__radio-text{
+	display:block;
 	max-width:466px
 }
 .survey__output{
