@@ -189,6 +189,14 @@ span{
 	background:#e9e9ec;
 	border-radius:100%
 }
+.about-us__cardImg img,
+.about-us__cardImg picture,
+.about-us__cardImg source{
+	width:100%;
+	height:100%;
+	-o-object-fit:contain;
+	object-fit:contain
+}
 .about-us__cardbody{
 	max-width:327px
 }
@@ -309,9 +317,10 @@ span{
 .contacts__card img,
 .contacts__card picture,
 .contacts__card source{
-	-ms-flex-item-align:start;
-	align-self:start;
-	width:24px
+	-ms-flex-item-align:center;
+	align-self:center;
+	width:24px;
+	height:24px
 }
 .contacts__body{
 	margin-left:36px
@@ -449,7 +458,10 @@ span{
 	position:relative;
 	max-width:635px;
 	max-height:505px;
-	width:100%
+	width:100%;
+	height:100%;
+	-o-object-fit:contain;
+	object-fit:contain
 }
 .our-team__main{
 	margin-top:72px;
@@ -474,6 +486,14 @@ span{
 	border-left:51px solid #0b7572;
 	padding:32px 0;
 	padding-left:56px
+}
+.our-team__img img,
+.our-team__img picture,
+.our-team__img source{
+	width:100%;
+	height:100%;
+	-o-object-fit:contain;
+	object-fit:contain
 }
 .our-team__headmin{
 	font-size:20px;
@@ -516,6 +536,14 @@ span{
 	-webkit-box-shadow:0 4px 15px rgba(0,0,0,.12);
 	box-shadow:0 4px 15px rgba(0,0,0,.12);
 	border-radius:10px
+}
+.our-work__card img,
+.our-work__card picture,
+.our-work__card source{
+	width:100%;
+	height:100%;
+	-o-object-fit:contain;
+	object-fit:contain
 }
 .our-work__cardBody{
 	margin:32px
@@ -596,6 +624,8 @@ span{
 .stages__card picture,
 .stages__card source{
 	width:100%;
+	-o-object-fit:contain;
+	object-fit:contain;
 	max-width:331px
 }
 .stages__main{
@@ -971,10 +1001,6 @@ button:active{
 		max-width:100%;
 		margin:0 0
 	}
-	.our-work__card img,
-	.our-work__card picture{
-		width:100%
-	}
 	.our-work__cardBody{
 		margin-top:24px
 	}
@@ -1237,7 +1263,9 @@ button:active{
 		margin:24px 0;
 		max-width:100px
 	}
-	.our-team__img img{
+	.our-team__img img,
+	.our-team__img picture,
+	.our-team__img source{
 		margin:20% auto;
 		max-width:100px
 	}

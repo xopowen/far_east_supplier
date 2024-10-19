@@ -34,6 +34,7 @@
         source,
         img{
         width: 100%;
+        object-fit: contain;
         max-width: 331px;
         @media screen and (max-width: 770px) {
           display: none;

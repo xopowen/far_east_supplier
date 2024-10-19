@@ -1,18 +1,20 @@
 <div class="form-connections">
     <form class="form-connections__form">
-        <h2  >Свяжитесь с нами</h2>
-        <textarea class="text"
-                  name="text"
-                  id="text"
-                  cols="30"
-                  rows="5"
-                  placeholder="Опишите задачу..."></textarea>
+        <h3  >Свяжитесь с нами</h3>
+        <label for="text"></label><textarea class="text"
+                                            name="text"
+                                            id="text"
+                                            cols="30"
+                                            rows="5"
+                                            placeholder="Опишите задачу..."></textarea>
         <div class="form-connections__file">
-            <label for="input__photo"> <img src="@@webRoot/static/img/screpka.png" alt="">Прикрипите ТЗ</label>
+            <label for="input__photo">
+                <img src="@@webRoot/static/img/screpka.png" loading="lazy" height="22" width="22" alt="">
+                Прикрипите ТЗ</label>
             <input type="file" id="input__file">
         </div>
         <div class="form-connections__file">
-            <label for="input__photo"> <img src="@@webRoot/static/img/screpka.png" alt="">Добавить фото товара</label>
+            <label for="input__photo"> <img src="@@webRoot/static/img/screpka.png"  loading="lazy" height="22" width="22" alt="">Добавить фото товара</label>
             <input type="file" id="input__photo">
         </div>
         <button class="form-connections__button">
